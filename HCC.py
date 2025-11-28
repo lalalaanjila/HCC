@@ -203,7 +203,6 @@ if st.button("点击进行预测"):
         shap_values_sample = shap_values[0]
 
         # 使用 matplotlib 输出 force plot 到图片
-        shap.initjs()
         plt.figure(figsize=(10, 3))
         shap.force_plot(
             explainer.expected_value,
